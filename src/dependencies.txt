@@ -1,0 +1,6 @@
+npm install -g firebase-tools
+npm install --save firebase
+npm install --save react-router
+npm install --save react-router-dom
+npm install @material-ui/core
+npm install uuid
