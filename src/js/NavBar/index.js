@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
+import './index.css';
 
 
 class NavBar extends React.Component {
@@ -37,14 +38,16 @@ class NavBar extends React.Component {
             )
         } else {
             return (
-                <Grid container>
-                    <Grid container xs='6'>
-                        <Button variant="contained" color="secondary" onClick={()=>this.resolveClick("Landing")}>LANDING</Button>
+                <div class="navbar-container">
+                    <Grid container>
+                        <Grid container xs='6'>
+                            <Button variant="contained" color="secondary" onClick={()=>this.resolveClick("Landing")}>LANDING</Button>
+                        </Grid>
+                        <Grid container xs='6'>
+                            <Button variant="contained" color="secondary" onClick={()=>this.resolveClick("Dashboard")}>DASHBOARD</Button>
+                        </Grid>
                     </Grid>
-                    <Grid container xs='6'>
-                        <Button variant="contained" color="secondary" onClick={()=>this.resolveClick("Dashboard")}>DASHBOARD</Button>
-                    </Grid>
-                </Grid>
+                </div>
             )
         }
     }

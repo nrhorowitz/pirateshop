@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import NavBar from '../NavBar';
+import './index.css'
 import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
 
 
@@ -31,8 +32,10 @@ class Landing extends React.Component {
             return (
                 <div>
                     <NavBar current={'Landing'}/>
-                    <Typography variant="h1">LANDING</Typography>
-                    <Button variant="contained" color="secondary" onClick={()=>this.resolveClick("Dashboard")}>BROWSE</Button>
+                    <div className="landing-container">
+                        <Typography variant="h1">WELCOME TO PIRATESHOP</Typography>
+                        <Button variant="contained" color="secondary" onClick={()=>this.resolveClick("Dashboard")}>BROWSE STARWARS</Button>
+                    </div>
                 </div>
             )
         }
