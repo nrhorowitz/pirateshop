@@ -4,3 +4,15 @@
     background-color: lightblue;
     border: 12px outset #1C6EA4;
 }
+
+.item-container {
+    max-width: 8000px;
+    height: auto;
+    padding: 30px 0;
+    overflow: auto;
+    float: right;
+}
+
+.total {
+    margin-top: 20px;
+}

@@ -1,8 +1,4 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import { BrowserRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
-
 
 class Loading extends React.Component {
     constructor(props) {
@@ -14,7 +10,9 @@ class Loading extends React.Component {
 
     render() {
         return (
-            <div>TODO: Loading</div>
+            <div>
+                <iframe src="https://giphy.com/embed/jAYUbVXgESSti" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/google-icon-loading-jAYUbVXgESSti">via GIPHY</a></p>
+            </div>
         )
     }
 }
